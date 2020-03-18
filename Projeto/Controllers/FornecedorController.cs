@@ -7,7 +7,7 @@ using Projeto.Models;
 
 namespace Projeto.Controllers
 {
-    public class ProdutoController : Controller
+    public class FornecedorController : Controller
     {
         //[privado/public/protected] [TipoResultado] [Nome da Acao]
         [HttpGet]
@@ -17,7 +17,7 @@ namespace Projeto.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastro(ProdutoViewModel model)
+        public IActionResult Cadastro(FornecedorViewModel model)
         {
             if (!ModelState.IsValid)
             {
